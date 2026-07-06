@@ -1,0 +1,165 @@
+/* ==========================
+   Navbar
+========================== */
+
+header{
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+header.sticky{
+
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+
+}
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:var(--bg);
+
+    backdrop-filter:blur(12px);
+
+    transition:.3s;
+
+}
+
+/* ==========================
+   Logo
+========================== */
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.logo img:hover{
+    transform: scale(1.08);
+}
+
+.logo h2{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+/* ==========================
+   Navigation Links
+========================== */
+
+.nav-links{
+
+    display:flex;
+    gap:35px;
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:var(--text);
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--primary);
+
+}
+
+/* Active Link */
+
+.nav-links a.active{
+
+    color:var(--primary);
+
+}
+
+/* ==========================
+   Hamburger
+========================== */
+
+.menu-btn{
+
+    display:none;
+
+    color:var(--text);
+
+    font-size:30px;
+
+    cursor:pointer;
+
+}
+
+/*==========================
+      Theme Toggle
+==========================*/
+
+.theme-toggle{
+
+    width:45px;
+
+    height:45px;
+
+    border:2px solid var(--primary);
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.theme-toggle:hover{
+
+    background:var(--primary);
+
+}
+
+.theme-toggle i{
+
+    color:var(--primary);
+
+    font-size:20px;
+
+    transition:.3s;
+
+}
+
+.theme-toggle:hover i{
+
+    color:var(--bg);
+
+}

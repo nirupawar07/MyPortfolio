@@ -1,0 +1,61 @@
+:root{
+
+    --bg:#081b29;
+    --bg2:#112e42;
+    --text:#ffffff;
+    --primary:#38bdf8;
+
+}
+
+.light-mode{
+
+    --bg:#f8fafc;
+    --bg2:#ffffff;
+    --text:#0f172a;
+    --primary:#0284c7;
+
+}
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:Arial,sans-serif;
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    transition:0.3s ease;
+
+}
+
+section{
+
+    padding:80px 8%;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+li{
+
+    list-style:none;
+
+}

@@ -1,0 +1,165 @@
+/* ==========================
+   Education
+========================== */
+
+.education{
+
+    padding:100px 10%;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+}
+
+.education-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:35px;
+
+}
+
+.education-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.education-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.edu-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:35px;
+
+    color:var(--bg);
+
+    margin-bottom:20px;
+
+}
+
+.education-card h3{
+
+    margin-bottom:10px;
+
+    color:var(--text);
+
+}
+
+.education-card h4{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.education-card span{
+
+    color:var(--text);
+
+    opacity:.75;
+
+    font-size:15px;
+
+}
+
+.education-card p{
+
+    margin-top:20px;
+
+    line-height:1.8;
+
+    color:var(--text);
+
+    opacity:.85;
+
+}
+
+/* ==========================
+   Badges
+========================== */
+
+.badges{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:50px;
+
+}
+
+.badges span{
+
+    background:var(--primary);
+
+    color:var(--bg);
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.badges span:hover{
+
+    transform:scale(1.1);
+
+}
+
+/* ==========================
+   Light Mode Cards
+========================== */
+
+body.light-mode .education-card{
+
+    background:rgba(0,0,0,.04);
+
+    border:1px solid rgba(0,0,0,.08);
+
+}

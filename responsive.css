@@ -1,0 +1,259 @@
+/* ==========================
+   Responsive Design
+========================== */
+
+@media(max-width:768px){
+
+/* Navbar */
+
+.navbar{
+
+    padding:18px 6%;
+
+}
+
+.logo{
+
+    margin-bottom:15px;
+
+}
+
+.logo h2{
+
+    font-size:18px;
+
+}
+
+.menu-btn{
+
+    display:block;
+
+}
+
+.nav-links{
+
+    position:absolute;
+
+    top:80px;
+
+    left:-100%;
+
+    width:100%;
+
+    background:var(--bg);
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:30px 0;
+
+    gap:25px;
+
+    transition:.4s;
+
+}
+
+.nav-links.active{
+
+    left:0;
+
+}
+
+/* Hero */
+
+.hero{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    min-height:auto;
+
+    padding:80px 6%;
+
+}
+
+.hero-content h1{
+
+    font-size:42px;
+
+}
+
+.hero-content h2{
+
+    font-size:24px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.hero-image img{
+
+    width:250px;
+
+    height:250px;
+
+    margin-bottom:30px;
+
+}
+
+/* About */
+
+.about{
+
+    flex-direction:column;
+
+    padding:80px 6%;
+
+}
+
+.about-content,
+
+.skills{
+
+    width:100%;
+
+}
+
+.section-title{
+
+    font-size:32px;
+
+}
+
+.about-card,
+
+.skills-card{
+
+    padding:25px;
+
+}
+
+.about-info{
+
+    grid-template-columns:1fr;
+
+}
+
+.stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+/* Projects */
+
+.projects{
+
+    padding:60px 20px;
+
+}
+
+.project-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.project-card img{
+
+    height:200px;
+
+}
+
+.project-buttons{
+
+    flex-direction:column;
+
+}
+
+/* Education */
+
+.education-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.education-card{
+
+    width:100%;
+
+}
+
+/* Certificates */
+
+.certificate-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.badges{
+
+    justify-content:center;
+
+}
+
+/* Contact */
+
+.contact-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.contact-form .btn{
+
+    width:100%;
+
+}
+
+}
+
+/* ==========================
+   Small Devices
+========================== */
+
+@media(max-width:480px){
+
+.hero-content h1{
+
+    font-size:34px;
+
+}
+
+.hero-content h2{
+
+    font-size:20px;
+
+}
+
+.section-title{
+
+    font-size:28px;
+
+}
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.hero-image img{
+
+    width:220px;
+
+    height:220px;
+
+}
+
+}
